@@ -1,0 +1,51 @@
+{
+    "name": "IND Checker",
+    "version": "0.0.0.1",
+    "description": "Check Company Name  in Netherlands IND visa sponsor companies list for highly skilled worker.",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://*/*"
+    ],
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "storage"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/data/ind-data.json"
+            ],
+            "matches": [
+                "https://*/*"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": {
+            "16": "assets/icons/ext-icon.png",
+            "24": "assets/icons/ext-icon.png",
+            "32": "assets/icons/ext-icon.png"
+        },
+        "default_title": "IND list checker",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "assets/icons/ext-icon.png",
+        "24": "assets/icons/ext-icon.png",
+        "32": "assets/icons/ext-icon.png"
+    }
+}

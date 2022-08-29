@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IND Checker</title>
+    <style>
+        body {
+            padding: 5px;
+        }
+
+        .box {
+            width: 300px;
+            min-height: 300px;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        #txtCompanyName {
+            padding: 10px 15px;
+            border: none;
+            width: 65%;
+            background-color: #f5f5f5;
+        }
+        #txtCompanyName:focus{
+            outline: none;
+        }
+        #btnSearch {
+            padding: 5px;
+            border: none;
+            background-color: #f5f5f5;
+
+        }
+
+        * {
+            margin: 0;
+        }
+
+        .searchBox {
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: #f5f5f5;
+            padding: 10px;
+        }
+        .link{
+            text-decoration: none;
+            padding: 5px;
+            display: inline-block;
+            width: 100%;
+        }
+        .link:hover{
+            cursor: pointer;
+            color: brown;
+            background-color: skyblue;
+            border-radius: 5px;
+        }
+        #btnSearch:hover{
+            cursor: pointer;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="searchBox">
+            <input type="text" placeholder="Company Name" id="txtCompanyName">
+            <button type="button" id="btnSearch">Search</button>
+            <hr/>
+            <div id="pr">
+
+            </div>
+        </div>
+
+       
+    </div>
+    <script src="./popup.js"></script>
+</body>
+
+</html>
